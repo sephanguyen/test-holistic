@@ -1,0 +1,20 @@
+{
+  "name": "cliledis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "bin": {
+    "ledis-cli": "./index.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.15.1",
+    "superagent": "^3.8.2"
+  }
+}
