@@ -14,8 +14,13 @@ program.arguments('<command>')
 				.post('http://localhost:60994/api/Ledis')
 				.query({query: command})
 				.end(function (err, res) {
-					var result = res.text || res.body;
-					console.log(result);
+					if (!err && res.ok) {
+						var result = res.text || res.body;
+						console.log(result);
+					}else {
+						console.error(err);
+					}
+					
 				});
 			}
 			});
