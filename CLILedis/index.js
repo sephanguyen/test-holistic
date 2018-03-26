@@ -11,7 +11,7 @@ program.arguments('<command>')
 			while(true) {
 				var command = yield prompt('');
 				request
-				.post('http://localhost:60994/api/Ledis')
+				.post('https://fierce-everglades-41339.herokuapp.com/api/Ledis')
 				.query({query: command})
 				.end(function (err, res) {
 					if (!err && res.ok) {
