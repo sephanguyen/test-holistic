@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:2.0.0-runtime
+FROM microsoft/aspnetcore
 WORKDIR /app
 COPY . .
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet ./bin/Release/netcoreapp2.0/publish/LedisServer.dll
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet LedisServer.dll
