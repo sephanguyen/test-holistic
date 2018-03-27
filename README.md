@@ -2,7 +2,7 @@
 
 CLILedis: <br />
 -cmd: npm install -g <br />
--cmd: ledis-cli command <br />
+-cmd: ledis-cli start <br />
 -After type query Ledis server <br />
  <br />
 CLI Server <br />
